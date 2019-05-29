@@ -140,7 +140,9 @@ h3 {
 /* BUTTONS                */
 /*******************      */
 
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px; 
     font-weight: 300;
@@ -149,7 +151,9 @@ h3 {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
-.btn-full:link, .btn-full:visited {
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -161,7 +165,10 @@ h3 {
     border: 1px solid #e67e22;
 }
 
-.btn:hover, .btn:active {
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #cf6d17;
 }
 
@@ -449,4 +456,37 @@ cite img {
     background-color: #fcfcfc;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+
+
+
+/*******************      */
+/* CONTACT-FORM        */
+/*******************      */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+ select , textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
 }
