@@ -1,29 +1,14 @@
 
-/* this is for small phones: from 0-480px */
-@media only screen and (max-width: 480px) {
+/* big tabs to 1200px */
+@media only screen and (max-width: 1200px) {
+    
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
 
-    /* .hero-text-box {
-        position: absolute;
-        width: 1140px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
+    .row { padding: 0 2%; }
 }
-
-
-/* small phones and small tabs: from  481-767px */
-@media only screen and (max-width: 767px) {
-    /* .hero-text-box {
-        position: absolute;
-        width: 1140px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    } */
-}
-
-
 
 /* small tabs to big tabs: from  768px-1023px */
 @media only screen and (max-width: 1023px) {
@@ -68,14 +53,77 @@
     .contact-form { width: 80%; }
 }
 
-
-/* big tabs to 1200px */
-@media only screen and (max-width: 1200px) {
+/* small phones and small tabs: from  481-767px */
+@media only screen and (max-width: 767px) {
     
+    body {font-size: 16px; }
+
+    section { padding: 30px 0;}
+
+    h1 { font-size: 180%; word-spacing: 4px; }
+    h2 { font-size: 150%; word-spacing: 1px; margin-bottom: 20px; }
+    h2:after {margin-top: 20px; width: 100px;}
+
+    .row,
     .hero-text-box {
-        width: 100%;
-        padding: 0 2%;
+        padding: 0 4%;
+    }
+    .col { width: 100%; margin: 0 0 4% 0; }
+
+    .main-nav { display: none;}
+
+    .long-copy { width: 100%; margin-left: 0%; }
+
+    .steps-box:first-child {
+        text-align: center;
+        padding-right: 0%;
     }
 
-    .row { padding: 0 2%; }
+    .app-screen {
+        width: 40%;
+    }
+
+    .work-steps {
+        margin-bottom: 20px;
+    }
+    
+    .work-steps:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .work-steps > div {
+        height: 40px;
+        width: 40px;
+        padding: 4px;
+        font-size: 120%;
+        margin: 0 15px 0 0; 
+    }
 }
+
+/* this is for small phones: from 0-480px */
+@media only screen and (max-width: 480px) {
+
+    body {font-size: 14px; }
+
+    section {
+        padding: 25px 0;
+    }
+
+    .contact-form { width: 100%; }
+
+    .btn-app img {
+        height: 40px;
+        width: auto;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
