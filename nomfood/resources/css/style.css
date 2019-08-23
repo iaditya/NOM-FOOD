@@ -16,6 +16,7 @@
 }
 
 html, body {
+    scroll-behavior: smooth;
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
